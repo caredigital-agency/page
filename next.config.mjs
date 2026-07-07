@@ -3,9 +3,9 @@ const isProd = process.env.GITHUB_ACTIONS === 'true'
 
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/bilingual-clinic-websites' : '',
+  basePath: isProd ? '/page' : '',
   env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? '/bilingual-clinic-websites' : '',
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/page' : '',
   },
   images: {
     unoptimized: true,
